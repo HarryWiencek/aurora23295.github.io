@@ -1,192 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aurora 23295</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-  <style>
-    * {margin:0; padding:0; box-sizing:border-box;}
-    body {
-      font-family: 'Orbitron', sans-serif;
-      overflow-x: hidden;
-      color: #e0fff8;
-      line-height: 1.6;
-      position: relative;
-      min-height: 100vh;
-    }
-    canvas#aurora {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-    header {
-      background: linear-gradient(90deg, aquamarine, #00ff88, #007755);
-      padding: 3rem 1rem;
-      text-align: center;
-      font-size: 3rem;
-      font-weight: 700;
-      color: #002815;
-      text-shadow: 0 0 15px #aaffee;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      background: rgba(0, 255, 170, 0.1);
-      backdrop-filter: blur(5px);
-      border-bottom: 1px solid rgba(0,255,170,0.3);
-    }
-    nav a {
-      color: aquamarine;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.2rem;
-      transition: all 0.3s ease;
-    }
-    nav a:hover {
-      color: #77ffd4;
-      transform: scale(1.1);
-    }
-    section {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 2rem;
-      border-radius: 15px;
-      background: rgba(0,255,170,0.05);
-      box-shadow: 0 0 25px rgba(0,255,170,0.1);
-    }
-    h2 {
-      color: aquamarine;
-      font-size: 2.2rem;
-      border-bottom: 2px solid #00ffbb;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    .card {
-      background: rgba(0,255,150,0.07);
-      border: 1px solid rgba(0,255,150,0.25);
-      padding: 1.5rem;
-      margin: 1rem 0;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,255,170,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 30px rgba(0,255,170,0.2);
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      margin-top: 3rem;
-      background: rgba(0,255,150,0.1);
-      color: aquamarine;
-      border-top: 1px solid rgba(0,255,170,0.3);
-    }
-    @media (max-width:768px){
-      header {font-size: 2.2rem;}
-      nav a {font-size: 1rem;}
-      h2 {font-size: 1.8rem;}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurora 23295</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'Orbitron', sans-serif;
+    overflow-x: hidden;
+    color: #e0fff8;
+    line-height: 1.6;
+    position: relative;
+    min-height: 100vh;
+    background: #000010;
+  }
+  canvas#aurora {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  header {
+    padding: 3rem 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e0fff8;
+    text-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 60px #00ff88;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: rgba(0, 0, 20, 0.4);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(0,255,150,0.2);
+  }
+  nav a {
+    color: #a0fff0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  nav a:hover { color: #77ffd4; transform: scale(1.1); }
+  section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    background: rgba(0,30,50,0.4);
+    box-shadow: 0 0 25px rgba(0,255,150,0.1);
+  }
+  h2 {
+    color: #00ffbb;
+    font-size: 2.2rem;
+    border-bottom: 2px solid #00ffbb;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .card {
+    background: rgba(0,50,30,0.5);
+    border: 1px solid rgba(0,255,150,0.25);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,255,150,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover { transform: translateY(-5px); box-shadow: 0 0 40px rgba(0,255,150,0.3); }
+  footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background: rgba(0,20,40,0.5);
+    color: #00ffbb;
+    border-top: 1px solid rgba(0,255,150,0.2);
+  }
+  @media (max-width:768px){ header {font-size: 2.2rem;} nav a {font-size:1rem;} h2 {font-size:1.8rem;} }
+</style>
 </head>
 <body>
-  <canvas id="aurora"></canvas>
+<canvas id="aurora"></canvas>
+<header>Aurora 23295</header>
+<nav>
+  <a href="#about">About</a>
+  <a href="#robot">Robot</a>
+  <a href="#outreach">Outreach</a>
+  <a href="#sponsors">Sponsors</a>
+  <a href="#contact">Contact</a>
+</nav>
+<section id="about">
+<h2>About Us</h2>
+<div class="card">
+<p>We are <strong>Aurora 23295</strong>, an FTC robotics team inspired by the aurora borealis. Our mission is to innovate, compete, and inspire our community through STEM excellence.</p>
+</div>
+</section>
+<section id="robot">
+<h2>Our Robot</h2>
+<div class="card">
+<p>Showcase your robot's drivetrain, subsystems, sensors, and software. Add CAD renders, subsystem descriptions, or match videos here.</p>
+</div>
+</section>
+<section id="outreach">
+<h2>Outreach & Impact</h2>
+<div class="card">
+<p>Share your STEM outreach efforts, community work, and impact metrics. Highlight mentoring, events, and inspiring the next generation.</p>
+</div>
+</section>
+<section id="sponsors">
+<h2>Sponsors</h2>
+<div class="card">
+<p>List your sponsors and add logos. Showcase the support that helps our team reach new heights.</p>
+</div>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: <em>yourteamemail@example.com</em></p>
+<p>Instagram / YouTube / Social links here.</p>
+</div>
+</section>
+<footer>© 2025 Aurora 23295 — Powered by STEM & Creativity</footer>
+<script>
+const canvas = document.getElementById('aurora');
+const ctx = canvas.getContext('2d');
+let width, height;
+function resize(){ width=canvas.width=window.innerWidth; height=canvas.height=window.innerHeight; }
+window.addEventListener('resize', resize); resize();
 
-  <header>Aurora 23295</header>
+const layers=[];
+for(let i=0;i<5;i++){
+ layers.push({y:Math.random()*height, amplitude:50+Math.random()*80, speed:0.002+Math.random()*0.003, phase:Math.random()*Math.PI*2, color:`hsla(${150+Math.random()*60},100%,40%,0.3)`});
+}
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#robot">Robot</a>
-    <a href="#outreach">Outreach</a>
-    <a href="#sponsors">Sponsors</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <div class="card">
-      <p>We are <strong>Aurora 23295</strong>, an FTC robotics team inspired by the aurora borealis. Our mission is to innovate, compete, and inspire our community through STEM excellence.</p>
-    </div>
-  </section>
-
-  <section id="robot">
-    <h2>Our Robot</h2>
-    <div class="card">
-      <p>Showcase your robot's drivetrain, subsystems, sensors, and software. Add CAD renders, subsystem descriptions, or match videos here.</p>
-    </div>
-  </section>
-
-  <section id="outreach">
-    <h2>Outreach & Impact</h2>
-    <div class="card">
-      <p>Share your STEM outreach efforts, community work, and impact metrics. Highlight mentoring, events, and inspiring the next generation.</p>
-    </div>
-  </section>
-
-  <section id="sponsors">
-    <h2>Sponsors</h2>
-    <div class="card">
-      <p>List your sponsors and add logos. Showcase the support that helps our team reach new heights.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: <em>yourteamemail@example.com</em></p>
-      <p>Instagram / YouTube / Social links here.</p>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 Aurora 23295 — Powered by STEM & Creativity
-  </footer>
-
-  <script>
-    const canvas = document.getElementById('aurora');
-    const ctx = canvas.getContext('2d');
-    let width, height;
-
-    function resize() {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', resize);
-    resize();
-
-    const waves = [];
-    for(let i=0; i<5; i++) {
-      waves.push({
-        y: Math.random()*height,
-        amplitude: 50 + Math.random()*50,
-        speed: 0.01 + Math.random()*0.02,
-        phase: Math.random()*Math.PI*2,
-        color: `hsla(${120 + Math.random()*60}, 100%, 50%, 0.3)`
-      });
-    }
-
-    function draw() {
-      ctx.clearRect(0,0,width,height);
-      for(const wave of waves){
-        ctx.beginPath();
-        for(let x=0; x<width; x+=2){
-          const y = wave.y + Math.sin(x*0.01 + wave.phase)*wave.amplitude;
-          ctx.lineTo(x, y);
-        }
-        ctx.strokeStyle = wave.color;
-        ctx.lineWidth = 4;
-        ctx.stroke();
-        wave.phase += wave.speed;
-      }
-      requestAnimationFrame(draw);
-    }
-    draw();
-  </script>
+function draw(){
+ ctx.clearRect(0,0,width,height);
+ for(const wave of layers){
+   ctx.beginPath();
+   for(let x=0;x<width;x+=2){
+     const y=wave.y+Math.sin(x*0.008+wave.phase)*wave.amplitude;
+     ctx.lineTo(x,y);
+   }
+   ctx.strokeStyle=wave.color;
+   ctx.lineWidth=3;
+   ctx.shadowBlur=15;
+   ctx.shadowColor=wave.color;
+   ctx.stroke();
+   wave.phase+=wave.speed;
+ }
+ requestAnimationFrame(draw);
+}
+draw();
+</script>
 </body>
 </html>
