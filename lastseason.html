@@ -13,29 +13,28 @@
     background: #000010;
     margin: 0;
     padding: 2rem;
-    text-align: center;
   }
   h1, h2 {
+    text-align: center;
     color: #00ffbb;
     text-shadow: 0 0 20px #00ff88;
     margin-bottom: 1rem;
   }
   .back-button {
-    display: inline-block;
     padding: 0.8rem 1.6rem;
     margin-bottom: 3rem;
     color: #00ffbb;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 3rem;
     font-weight: 700;
-    border: 2px solid #00ffbb;
-    border-radius: 8px;
+    /*border: 2px solid #00ffbb;
+    border-radius: 8px;*/
     transition: 0.3s ease;
-    box-shadow: 0 0 10px rgba(0,255,150,0.3);
+    text-shadow: 0 0 10px rgba(0,255,150,0.3);
   }
   .back-button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0,255,150,0.5);
+    text-shadow: 0 0 20px rgba(0,255,150,0.5);
     color: #a0fff0;
   }
 
@@ -92,8 +91,8 @@
 
 <body>
 
-<h1>Last Season (2023–2024)</h1>
-<a class="back-button" href="index.html">← Back to Home</a>
+<h1>Last Season (Into the Deep)</h1>
+<a class="back-button" href="index.html">←</a>
 
 <!-- Team photo -->
 <section id="team-photo">
@@ -106,7 +105,7 @@
   <h2>Portfolio</h2>
   <div class="carousel-container">
     <span class="arrow arrow-left">&#8592;</span>
-    <img id="carousel" class="carousel-image" src="portfolio/1.png" alt="Portfolio Page">
+    <img id="carousel" class="carousel-image" src="images/portfolio/1.png" alt="Portfolio Page">
     <span class="arrow arrow-right">&#8594;</span>
   </div>
 </section>
@@ -114,21 +113,21 @@
 <script>
   // List of portfolio images (replace or add more)
   const images = [
-    'portfolio/1.jpg',
-    'portfolio/2.jpg',
-    'portfolio/3.jpg',
-    'portfolio/4.jpg',
-    'portfolio/5.jpg',
-    'portfolio/6.jpg',
-    'portfolio/7.jpg',
-    'portfolio/8.jpg',
-    'portfolio/9.jpg',
-    'portfolio/10.jpg',
-    'portfolio/11.jpg',
-    'portfolio/12.jpg',
-    'portfolio/13.jpg',
-    'portfolio/14.jpg',
-    'portfolio/15.jpg'
+    'images/portfolio/1.jpg',
+    'images/portfolio/2.jpg',
+    'images/portfolio/3.jpg',
+    'images/portfolio/4.jpg',
+    'images/portfolio/5.jpg',
+    'images/portfolio/6.jpg',
+    'images/portfolio/7.jpg',
+    'images/portfolio/8.jpg',
+    'images/portfolio/9.jpg',
+    'images/portfolio/10.jpg',
+    'images/portfolio/11.jpg',
+    'images/portfolio/12.jpg',
+    'images/portfolio/13.jpg',
+    'images/portfolio/14.jpg',
+    'images/portfolio/15.jpg'
   ];
 
   let currentIndex = 0;
