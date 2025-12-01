@@ -133,9 +133,14 @@
 
   let currentIndex = 0;
   const carousel = document.getElementById('carousel');
+  const portImage = document.getElementById('carousel-image')
 
   function showImage(index){
     carousel.src = images[index];
+  }
+
+  function expandPic() {
+    portImage.
   }
 
   document.querySelector('.arrow-left').addEventListener('click', () => {
@@ -146,6 +151,10 @@
   document.querySelector('.arrow-right').addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % images.length;
     showImage(currentIndex);
+  });
+
+  document.querySelector('.carousel-image').addEventListener('click', () => {
+    
   });
 
   // Arrow keys navigation
@@ -159,6 +168,5 @@
     }
   });
 </script>
-
 </body>
 </html>
