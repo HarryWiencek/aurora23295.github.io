@@ -14,7 +14,7 @@
 	<nav>
 		<a href="#about">About</a>
 		<a href="#socials">Socials</a>
-		<a href="#outreach">Outreach</a>
+		<a href="#media">Media</a>
 		<a href="#resources">Resources</a>
 		<a href="#contact">Contact</a>
 		<a href="lastseason.html">Last Season</a>
@@ -22,7 +22,7 @@
 	<section id="about">
 		<h2>About Us</h2>
 		<div class="card">
-			<p>We are <b>Aurora 23295</b>, a FIRST Tech Challenge Team located in Medford, Oregon. Our team started in 2023 at St. Mary’s School of Medford, Oregon as part of the SOAR League. Our team is very diverse, with members coming from three different countries (Korea, China, US). This is our third year as an FTC team. Last year, we were honored to receive the Connect award and advanced to the playoffs of the Oregon State Championship. With a new robotics season comes a new drive to compete and improve further. This is why our team values commitment, passion, and cooperation. As such, our team culture encourages every member to contribute to our outreach, robot development process, and team portfolio. This ensures that everyone gets a chance to participate in all three crucial aspects of robotics and improve individually.</p>
+			<p>We are <b>Aurora 23295</b>, a FIRST Tech Challenge Team located in Medford, Oregon. Our team started in 2023 at St. Mary’s School of Medford, Oregon as part of the SOAR League. Our team is very diverse, with members coming from three different countries (Korea, China, US). This is our third year as an FTC team. Last year, we were honored to receive the Connect award and advanced to the playoffs of the Oregon State Championship. With a new robotics season comes a new drive to compete and improve further. This is why our team values commitment, passion, and cooperation. As such, our team culture encourages every member to contribute to our outreach, robot development process, and team media_comp. This ensures that everyone gets a chance to participate in all three crucial aspects of robotics and improve individually.</p>
 		</div>
 	</section>
 	<section id="socials">
@@ -39,12 +39,44 @@
 			</a>
 		</div>
 	</section>
-	<section id="outreach">
-		<h2>Outreach</h2>
-		<div class="card">
-			<p></p>
+	<section id="media">
+		<h2>Media</h2>
+		<h2>Portfolio</h2>
+
+		<div class="carousel">
+			<span class="carousel-arrow left">&#10094;</span>
+
+			<div class="carousel-track">
+
+			<!-- 1–15 IMAGES -->
+			<img class="carousel-img modal-img" src="images/media_comp/1.jpg"  data-full="images/media_comp/1.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/2.jpg"  data-full="images/media_comp/2.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/3.jpg"  data-full="images/media_comp/3.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/4.jpg"  data-full="images/media_comp/4.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/5.jpg"  data-full="images/media_comp/5.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/6.jpg"  data-full="images/media_comp/6.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/7.jpg"  data-full="images/media_comp/7.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/8.jpg"  data-full="images/media_comp/8.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/9.jpg"  data-full="images/media_comp/9.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/10.jpg" data-full="images/media_comp/10.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/11.jpg" data-full="images/media_comp/11.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/12.jpg" data-full="images/media_comp/12.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/13.jpg" data-full="images/media_comp/13.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/14.jpg" data-full="images/media_comp/14.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/15.jpg" data-full="images/media_comp/15.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/16.jpg" data-full="images/media_comp/16.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/17.jpg" data-full="images/media_comp/17.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/18.jpg" data-full="images/media_comp/18.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/19.jpg" data-full="images/media_comp/19.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/20.jpg" data-full="images/media_comp/20.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/21.jpg" data-full="images/media_comp/21.jpg">
+			<img class="carousel-img modal-img" src="images/media_comp/22.jpg" data-full="images/media_comp/22.jpg">
+
+			</div>
+
+			<span class="carousel-arrow right">&#10095;</span>
 		</div>
-		</section>
+	</section>
 	<section id="resources">
 		<h2>Resources</h2>
 		<div class="card">
@@ -57,6 +89,13 @@
 			<p></p>
 		</div>
 		</section>
+
+	<div id="imgModal" class="modal">
+		<span class="modal-close" id="modalClose">&times;</span>
+		<span class="modal-arrow left" id="modalPrev">&#10094;</span>
+		<img id="modalImage">
+		<span class="modal-arrow right" id="modalNext">&#10095;</span>
+	</div>	
 	<footer>
 	  <div>
 	    <p>© 2025 Aurora 23295 — Powered by STEM & Creativity</p>
@@ -72,6 +111,7 @@
 	    </p>        
 	  </div>
 	</footer>
+	<script src="carousel.js"></script>
 	<script src="bg.js"></script>
 </body>
 </html>
