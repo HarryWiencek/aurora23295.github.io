@@ -71,6 +71,15 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.pg-title h2 {
+  color: #00ffbb;
+  font-size: 3rem;
+  border-bottom: 2px solid #00ffbb;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}	
+
 /* TEAM PHOTO */
 .team-photo {
   width: 100%;
