@@ -182,6 +182,49 @@ h2 {
   transform:translateY(-50%) scale(1.2);
 }
 
+/* AURORA GLOW SCROLLBAR */
+.carousel-track::-webkit-scrollbar {
+  height: 10px;                 /* thickness */
+}
+
+.carousel-track::-webkit-scrollbar-track {
+  background: rgba(0, 20, 40, 0.4);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg,
+    #00ffbb,
+    #00bbaa,
+    #009988,
+    #00ffcc
+  );
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,255,180,0.6),
+              0 0 25px rgba(0,255,150,0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-track::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg,
+    #77ffd4,
+    #44ffcc,
+    #22e0aa,
+    #99ffe6
+  );
+  box-shadow: 0 0 20px rgba(0,255,200,0.9),
+              0 0 35px rgba(0,255,150,0.5);
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  opacity: 0;
+}
+
+.carousel-track:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
+
 /* FOOTER */
 footer {
   text-align:center;
@@ -192,5 +235,4 @@ footer {
   border-top:1px solid rgba(0,255,150,0.2);
 }
 
-/* MOBILE */
-@media (max-wid
+
